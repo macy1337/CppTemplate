@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build project with Make",
+            "type": "shell",
+            "command": "make",
+            "args": ["all"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Kompilacja całego projektu za pomocą Makefile"
+        },
+        {
+            "label": "Clean project",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "detail": "Usunięcie skompilowanych plików binarnych"
+        }
+    ]
+}
